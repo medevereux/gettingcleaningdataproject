@@ -1,6 +1,5 @@
 # Codebook as of 25th April 2015
 ========
-
 All data taken from UCI HAR Dataset (Anguita et al [1])
 
 All variables covered result from Step 5 of run_analysis.R script (which is included in submission of this project). 
@@ -107,7 +106,7 @@ For our purposes we have made two major changes to the data as presented in the 
 In total we have the following signals, categorized:
 * Time signal
   - By instrument (accelerometer or gyroscope)
-    - Accelerometer signal further divided into body ( and gravity accelerometer
+    - Accelerometer signal further divided into body and gravity accelerometer
     - Accelerometer linear acceleration and angular velocity calculated to form "Jerk" signals
   - By axis (x,y or z)
   - By magnitude
@@ -121,7 +120,7 @@ In total we have the following signals, categorized:
   
 * Angle variables
 
-It is important to note that all variables have already been standardized and hence fall within a range of [-1,1]. 
+**It is important to note that all variables have already been standardized and hence fall within a range of [-1,1].**
 
 The systematic changes made to the labels are listed below (this can also be found in the ReadMe.md file uploaded, step 4):
 * Removed all punctuation such as "(",")",",","-"
