@@ -1,17 +1,21 @@
 # Getting and Cleaning Data Project ReadMe
 
 This ReadMe describes the steps taken in "run_analysis.R" script (uploaded with this file) to download, analyze and modify the raw data provided into a "tidy" data set.
+
 Note that more detailed annotations are in the script, along with delineation of steps taken.
 
-Note that the package "dplyr" needs to be installed as it is used in stage 5. 
+Note that the package **dplyr** needs to be installed as it is used in stage 5. 
 
 ## Step 1
 Assuming the data is downloaded into your working directory, the commands in step 1 load up the original train and test sets provided (a preprocessed random 70%/30% split of the original dataset). 
+
 The train and test datasets are merged with their respective activity (denoted as "y" in the raw data) and subject ("subj" in the raw data) labels, then merged together as "combined.data".
+
 There should be a 10299 * 563 dataset at the end of this step, with no column names apart from "y" and "subj" in columns 562 and 563 respectively. This dataset is called "combined.data.2". 
 
 ## Step 2
 We wish to extract the most simple summary measurements of the raw data - the mean and standard deviation. This is done by loading in the names of the variables "features.txt" and finding only those variables whose names contain either "mean" or "std". We select only those columns in "combined.data" and discard the rest.
+
 There should be a 10299 * 88 dataset at the end of this step, with still no column names apart from "y" and "subj" in columns 87 and 88 respectively. This dataset is called "combined.data.2".
 
 ## Step 3
@@ -30,25 +34,31 @@ There should be a 10299 * 88 dataset at the end of this step, with still no colu
 
 ## Step 4
 The column labels are loaded as "features.txt" with only the mean and standard deviation columns selected; what follows is 18 commands to replace the original opaque and cryptic variable names into something more descriptive.
+
 Below is a brief summary of what was systematically changed and replaced:
 
 * Removed all punctuation such as "(",")",",","-".
 * All text to lower case
 * Prefix "t" replaced with "timedomain"
 * Prefix "f" replaced with "frequencydomain"
+* Replaced "bodybody" mistakes with "body"
 * "acc" replaced with "accelerometer"
 * "mag" replaced with "magnitude"
 * "gyro" replaced with "gyroscope"
+* "accelerometerjerk" replaced with "linearacceleration"
+* "gyroscopejerk" replaced with "angularvelocity"
 * Column label "y" replaced with "activitylabels"
 * Column label "subj" replaced with "subjectlabels"
 
 There were also some specific manual changes made to variables 80-86 (angle(tBodyAccMean,gravity)...angle(Z,gravityMean)) to reflect the description of being an angle between the two enclosed vectors.
-For more information on the exact variables please consult the codebook supplied.
+
+For more information on the exact variables please consult the codebook supplied as well as the detailed annotations on the run_analysis.R script.
 
 There should be a 10299 * 88 dataset at the end of this step, with descriptive column titles, called "combined.data.2".
 
 ## Step 5
 A new, independent dataset was generated from the one in step 4 by taking the average of each present variable by each activity and subject.
+
 There should be a 180 * 88 dataset at the end of this step called "groupedmean". The dataset should be arranged by "activitylabels" followed by "subjectlabels" such that rows 1-30 cover the average subject data per "laying" activity, then rows 31-60 cover the average subject data per "sitting" activity etc. Columns "activitylabels" and "subjectlabels" should be the first two columns seen.
 
 ## Export data
@@ -67,5 +77,11 @@ A row in "groupedmean" is the average of one subject's signal data for a particu
 All units in this dataset have been normalized such that they range from [-1 to 1] only, and can therefore be in the same table. 
 
 The finalized dataset "groupedmean" can be easily read into R; just copy and paste the following code into R, careful to replace the file path with your own:
+
     groupedmean<-read.table(file_path,header=TRUE)
     View(groupedmean)
+
+## References
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+[2] Wickham, Hadley. Tidy Data. The Journal of Statistical Software, vol. 59, 2014.
