@@ -17,50 +17,88 @@ The full description of the original data as described below *in italics* is fro
 *'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.*
 
 *tBodyAcc-XYZ*
+
 *tGravityAcc-XYZ*
+
 *tBodyAccJerk-XYZ*
+
 *tBodyGyro-XYZ*
+
 *tBodyGyroJerk-XYZ*
+
 *tBodyAccMag*
+
 *tGravityAccMag*
+
 *tBodyAccJerkMag*
+
 *tBodyGyroMag*
+
 *tBodyGyroJerkMag*
+
 *fBodyAcc-XYZ*
+
 *fBodyAccJerk-XYZ*
+
 *fBodyGyro-XYZ*
+
 *fBodyAccMag*
+
 *fBodyAccJerkMag*
+
 *fBodyGyroMag*
+
 *fBodyGyroJerkMag*
+
 
 *The set of variables that were estimated from these signals are:*
 
 *mean(): Mean value*
+
 *std(): Standard deviation*
+
 *mad(): Median absolute deviation*
+
 *max(): Largest value in array*
+
 *min(): Smallest value in array*
+
 *sma(): Signal magnitude area*
+
 *energy(): Energy measure. Sum of the squares divided by the number of values.*
+
 *iqr(): Interquartile range*
+
 *entropy(): Signal entropy*
+
 *arCoeff(): Autorregresion coefficients with Burg order equal to 4*
+
 *correlation(): correlation coefficient between two signals*
+
 *maxInds(): index of the frequency component with largest magnitude*
+
 *meanFreq(): Weighted average of the frequency components to obtain a mean frequency*
+
 *skewness(): skewness of the frequency domain signal* 
+
 *kurtosis(): kurtosis of the frequency domain signal*
+
 *bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.*
+
 *angle(): Angle between to vectors.*
+
 
 *Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:*
 
-*gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean*
+*gravityMean*
+
+*tBodyAccMean*
+
+*tBodyAccJerkMean*
+
+*tBodyGyroMean*
+
+*tBodyGyroJerkMean*
 
 For our purposes we have made two major changes to the data as presented in the original dataset:
 * Removed all variables apart from those that summarize the data by taking the mean or standard deviation
@@ -108,361 +146,368 @@ There are 88 columns (the activity label, subject label and 88 variables of summ
 
 * activitylabels
 
-Labels used for activities. Each person performed six activities wearing a smartphone (Samsung Galaxy S II) on the waist.
-Activities were transformed from original values of 1-6 to more descriptive labels. 
+  - Labels used for activities. Each person performed six activities wearing a smartphone (Samsung Galaxy S II) on the waist.
+  - Activities were transformed from original values of 1-6 to more descriptive labels. 
+
 1 WALKING
+
 2 WALKING_UPSTAIRS
+
 3 WALKING_DOWNSTAIRS
+
 4 SITTING
+
 5 STANDING
+
 6 LAYING
+
 
 * subjectlabels
 
-Labels used for subjects. The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years.
-Labels are integers from 1-30 inclusive. 
+  - Labels used for subjects. The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years.
+  - Labels are integers from 1-30 inclusive. 
 
 * timedomainbodyaccelerometermeanx
 
-Time domain signal at constant 50 Hz, from body acceleration, average signal from axis x
+  - Time domain signal at constant 50 Hz, from body acceleration, average signal from axis x
 
 * timedomainbodyaccelerometermeany
 
-Time domain signal at constant 50 Hz, from body acceleration, average signal from axis y
+  - Time domain signal at constant 50 Hz, from body acceleration, average signal from axis y
 
 * timedomainbodyaccelerometermeanz
 
-Time domain signal at constant 50 Hz, from body acceleration, average signal from axis z
+  - Time domain signal at constant 50 Hz, from body acceleration, average signal from axis z
 
 * timedomainbodyaccelerometerstdx
 
-Time domain signal at constant 50 Hz, from body acceleration, standard deviation of signal from axis x
+  - Time domain signal at constant 50 Hz, from body acceleration, standard deviation of signal from axis x
 
 * timedomainbodyaccelerometerstdy
 
-Time domain signal at constant 50 Hz, from body acceleration, standard deviation of signal from axis y
+  - Time domain signal at constant 50 Hz, from body acceleration, standard deviation of signal from axis y
 
 * timedomainbodyaccelerometerstdz
 
-Time domain signal at constant 50 Hz, from body acceleration, standard deviation of signal from axis z
+  - Time domain signal at constant 50 Hz, from body acceleration, standard deviation of signal from axis z
 
 * timedomaingravityaccelerometermeanx
 
-Time domain signal at constant 50 Hz, from gravity acceleration, average signal from axis x
+  - Time domain signal at constant 50 Hz, from gravity acceleration, average signal from axis x
 
 * timedomaingravityaccelerometermeany
 
-Time domain signal at constant 50 Hz, from gravity acceleration, average signal from axis y
+  - Time domain signal at constant 50 Hz, from gravity acceleration, average signal from axis y
 
 * timedomaingravityaccelerometermeanz
 
-Time domain signal at constant 50 Hz, from gravity acceleration, average signal from axis z
+  - Time domain signal at constant 50 Hz, from gravity acceleration, average signal from axis z
 
 * timedomaingravityaccelerometerstdx
 
-Time domain signal at constant 50 Hz, from gravity acceleration, standard deviation of signal from axis x
+  - Time domain signal at constant 50 Hz, from gravity acceleration, standard deviation of signal from axis x
 
 * timedomaingravityaccelerometerstdy
 
-Time domain signal at constant 50 Hz, from gravity acceleration, standard deviation of signal from axis y
+  - Time domain signal at constant 50 Hz, from gravity acceleration, standard deviation of signal from axis y
 
 * timedomaingravityaccelerometerstdz
 
-Time domain signal at constant 50 Hz, from gravity acceleration, standard deviation of signal from axis z
+  - Time domain signal at constant 50 Hz, from gravity acceleration, standard deviation of signal from axis z
 
 * timedomainbodylinearaccelerationmeanx
 
-Time domain signal at constant 50 Hz, body linear acceleration average signal from axis x
+  - Time domain signal at constant 50 Hz, body linear acceleration average signal from axis x
 
 * timedomainbodylinearaccelerationmeany
 
-Time domain signal at constant 50 Hz, body linear acceleration average signal from axis y
+  - Time domain signal at constant 50 Hz, body linear acceleration average signal from axis y
 
 * timedomainbodylinearaccelerationmeanz
 
-Time domain signal at constant 50 Hz, body linear acceleration average signal from axis z
+  - Time domain signal at constant 50 Hz, body linear acceleration average signal from axis z
 
 * timedomainbodylinearaccelerationstdx
 
-Time domain signal at constant 50 Hz, body linear acceleration standard deviation of signal from axis x
+  - Time domain signal at constant 50 Hz, body linear acceleration standard deviation of signal from axis x
 
 * timedomainbodylinearaccelerationstdy
 
-Time domain signal at constant 50 Hz, body linear acceleration standard deviation of signal from axis y
+  - Time domain signal at constant 50 Hz, body linear acceleration standard deviation of signal from axis y
 
 * timedomainbodylinearaccelerationstdz
 
-Time domain signal at constant 50 Hz, body linear acceleration standard deviation of signal from axis z
+  - Time domain signal at constant 50 Hz, body linear acceleration standard deviation of signal from axis z
 
 * timedomainbodygyroscopemeanx
 
-Time domain signal at constant 50 Hz, from body gyroscope, average signal from axis x
+  - Time domain signal at constant 50 Hz, from body gyroscope, average signal from axis x
 
 * timedomainbodygyroscopemeany
 
-Time domain signal at constant 50 Hz, from body gyroscope, average signal from axis y
+  - Time domain signal at constant 50 Hz, from body gyroscope, average signal from axis y
 
 * timedomainbodygyroscopemeanz
 
-Time domain signal at constant 50 Hz, from body gyroscope, average signal from axis z
+  - Time domain signal at constant 50 Hz, from body gyroscope, average signal from axis z
 
 * timedomainbodygyroscopestdx
 
-Time domain signal at constant 50 Hz, from body gyroscope, standard deviation of signal from axis x
+  - Time domain signal at constant 50 Hz, from body gyroscope, standard deviation of signal from axis x
 
 * timedomainbodygyroscopestdy
 
-Time domain signal at constant 50 Hz, from body gyroscope, standard deviation of signal from axis y
+  - Time domain signal at constant 50 Hz, from body gyroscope, standard deviation of signal from axis y
 
 * timedomainbodygyroscopestdz
 
-Time domain signal at constant 50 Hz, from body gyroscope, standard deviation of signal from axis z
+  - Time domain signal at constant 50 Hz, from body gyroscope, standard deviation of signal from axis z
 
 * timedomainbodygyroscopeangularvelocitymeanx
 
-Time domain signal at constant 50 Hz, from body gyroscope angular velocity, average signal from axis x
+  - Time domain signal at constant 50 Hz, from body gyroscope angular velocity, average signal from axis x
 
 * timedomainbodygyroscopeangularvelocitymeany
 
-Time domain signal at constant 50 Hz, from body gyroscope angular velocity, average signal from axis y
+  - Time domain signal at constant 50 Hz, from body gyroscope angular velocity, average signal from axis y
 
 * timedomainbodygyroscopeangularvelocitymeanz
 
-Time domain signal at constant 50 Hz, from body gyroscope angular velocity, average signal from axis z
+  - Time domain signal at constant 50 Hz, from body gyroscope angular velocity, average signal from axis z
 
 * timedomainbodygyroscopeangularvelocitystdx
 
-Time domain signal at constant 50 Hz, from body gyroscope angular velocity, standard deviation of signal from axis x
+  - Time domain signal at constant 50 Hz, from body gyroscope angular velocity, standard deviation of signal from axis x
 
 * timedomainbodygyroscopeangularvelocitystdy
 
-Time domain signal at constant 50 Hz, from body gyroscope angular velocity, standard deviation of signal from axis y
+  - Time domain signal at constant 50 Hz, from body gyroscope angular velocity, standard deviation of signal from axis y
 
 * timedomainbodygyroscopeangularvelocitystdz
 
-Time domain signal at constant 50 Hz, from body gyroscope angular velocity, standard deviation of signal from axis z
+  - Time domain signal at constant 50 Hz, from body gyroscope angular velocity, standard deviation of signal from axis z
 
 * timedomainbodyaccelerometermagnitudemean
 
-Time domain signal at constant 50 Hz, from body acceleration, magnitude, mean
+  - Time domain signal at constant 50 Hz, from body acceleration, magnitude, mean
 
 * timedomainbodyaccelerometermagnitudestd
 
-Time domain signal at constant 50 Hz, from body acceleration, magnitude, standard deviation of signal from axis 
+  - Time domain signal at constant 50 Hz, from body acceleration, magnitude, standard deviation of signal from axis 
 
 * timedomaingravityaccelerometermagnitudemean
 
-Time domain signal at constant 50 Hz, from gravity acceleration, magnitude, mean
+  - Time domain signal at constant 50 Hz, from gravity acceleration, magnitude, mean
 
 * timedomaingravityaccelerometermagnitudestd
 
-Time domain signal at constant 50 Hz, from gravity acceleration, magnitude, standard deviation of signal from axis 
+  - Time domain signal at constant 50 Hz, from gravity acceleration, magnitude, standard deviation of signal from axis 
 
 * timedomainbodylinearaccelerationmagnitudemean
 
-Time domain signal at constant 50 Hz, body linear acceleration, magnitude, mean
+  - Time domain signal at constant 50 Hz, body linear acceleration, magnitude, mean
 
 * timedomainbodylinearaccelerationmagnitudestd
 
-Time domain signal at constant 50 Hz, body linear acceleration, magnitude, standard deviation of signal from axis 
+  - Time domain signal at constant 50 Hz, body linear acceleration, magnitude, standard deviation of signal from axis 
 
 * timedomainbodygyroscopemagnitudemean
 
-Time domain signal at constant 50 Hz, from body gyroscope magnitude, mean
+  - Time domain signal at constant 50 Hz, from body gyroscope magnitude, mean
 
 * timedomainbodygyroscopemagnitudestd
 
-Time domain signal at constant 50 Hz, from body gyroscope magnitude, standard deviation of signal from axis 
+  - Time domain signal at constant 50 Hz, from body gyroscope magnitude, standard deviation of signal from axis 
 
 * timedomainbodygyroscopeangularvelocitymagnitudemean
 
-Time domain signal at constant 50 Hz, from body gyroscope angular velocity, magnitude, mean
+  - Time domain signal at constant 50 Hz, from body gyroscope angular velocity, magnitude, mean
 
 * timedomainbodygyroscopeangularvelocitymagnitudestd
 
-Time domain signal at constant 50 Hz, from body gyroscope angular velocity, magnitude, standard deviation of signal from axis 
+  - Time domain signal at constant 50 Hz, from body gyroscope angular velocity, magnitude, standard deviation of signal from axis 
 
 * frequencydomainbodyaccelerometermeanx
 
-Frequency domain signal, from body acceleration, average signal from axis x
+  - Frequency domain signal, from body acceleration, average signal from axis x
 
 * frequencydomainbodyaccelerometermeany
 
-Frequency domain signal, from body acceleration, average signal from axis y
+  - Frequency domain signal, from body acceleration, average signal from axis y
 
 * frequencydomainbodyaccelerometermeanz
 
-Frequency domain signal, from body acceleration, average signal from axis z
+  - Frequency domain signal, from body acceleration, average signal from axis z
 
 * frequencydomainbodyaccelerometerstdx
 
-Frequency domain signal, from body acceleration, standard deviation of signal from axis x
+  - Frequency domain signal, from body acceleration, standard deviation of signal from axis x
 
 * frequencydomainbodyaccelerometerstdy
 
-Frequency domain signal, from body acceleration, standard deviation of signal from axis y
+  - Frequency domain signal, from body acceleration, standard deviation of signal from axis y
 
 * frequencydomainbodyaccelerometerstdz
 
-Frequency domain signal, from body acceleration, standard deviation of signal from axis z
+  - Frequency domain signal, from body acceleration, standard deviation of signal from axis z
 
 * frequencydomainbodyaccelerometermeanfreqx
 
-Frequency domain signal, from body acceleration, weighted average of frequency components for x axis
+  - Frequency domain signal, from body acceleration, weighted average of frequency components for x axis
 
 * frequencydomainbodyaccelerometermeanfreqy
 
-Frequency domain signal, from body acceleration, weighted average of frequency components for y axis
+  - Frequency domain signal, from body acceleration, weighted average of frequency components for y axis
 
 * frequencydomainbodyaccelerometermeanfreqz
 
-Frequency domain signal, from body acceleration, weighted average of frequency components for z axis
+  - Frequency domain signal, from body acceleration, weighted average of frequency components for z axis
 
 * frequencydomainbodylinearaccelerationmeanx
 
-Frequency domain signal, body linear acceleration average signal from axis x
+  - Frequency domain signal, body linear acceleration average signal from axis x
 
 * frequencydomainbodylinearaccelerationmeany
 
-Frequency domain signal, body linear acceleration average signal from axis y
+  - Frequency domain signal, body linear acceleration average signal from axis y
 
 * frequencydomainbodylinearaccelerationmeanz
 
-Frequency domain signal, body linear acceleration average signal from axis z
+  - Frequency domain signal, body linear acceleration average signal from axis z
 
 * frequencydomainbodylinearaccelerationstdx
 
-Frequency domain signal, body linear acceleration standard deviation of signal from axis x
+  - Frequency domain signal, body linear acceleration standard deviation of signal from axis x
 
 * frequencydomainbodylinearaccelerationstdy
 
-Frequency domain signal, body linear acceleration standard deviation of signal from axis y
+  - Frequency domain signal, body linear acceleration standard deviation of signal from axis y
 
 * frequencydomainbodylinearaccelerationstdz
 
-Frequency domain signal, body linear acceleration standard deviation of signal from axis z
+  - Frequency domain signal, body linear acceleration standard deviation of signal from axis z
 
 * frequencydomainbodylinearaccelerationmeanfreqx
 
-Frequency domain signal, body linear acceleration weighted average of frequency components for x axis
+  - Frequency domain signal, body linear acceleration weighted average of frequency components for x axis
 
 * frequencydomainbodylinearaccelerationmeanfreqy
 
-Frequency domain signal, body linear acceleration weighted average of frequency components for y axis
+  - Frequency domain signal, body linear acceleration weighted average of frequency components for y axis
 
 * frequencydomainbodylinearaccelerationmeanfreqz
 
-Frequency domain signal, body linear acceleration weighted average of frequency components for z axis
+  - Frequency domain signal, body linear acceleration weighted average of frequency components for z axis
 
 * frequencydomainbodygyroscopemeanx
 
-Frequency domain signal, from body gyroscope average signal from axis x
+  - Frequency domain signal, from body gyroscope average signal from axis x
 
 * frequencydomainbodygyroscopemeany
 
-Frequency domain signal, from body gyroscope average signal from axis y
+  - Frequency domain signal, from body gyroscope average signal from axis y
 
 * frequencydomainbodygyroscopemeanz
 
-Frequency domain signal, from body gyroscope average signal from axis z
+  - Frequency domain signal, from body gyroscope average signal from axis z
 
 * frequencydomainbodygyroscopestdx
 
-Frequency domain signal, from body gyroscope standard deviation of signal from axis x
+  - Frequency domain signal, from body gyroscope standard deviation of signal from axis x
 
 * frequencydomainbodygyroscopestdy
 
-Frequency domain signal, from body gyroscope standard deviation of signal from axis y
+  - Frequency domain signal, from body gyroscope standard deviation of signal from axis y
 
 * frequencydomainbodygyroscopestdz
 
-Frequency domain signal, from body gyroscope standard deviation of signal from axis z
+  - Frequency domain signal, from body gyroscope standard deviation of signal from axis z
 
 * frequencydomainbodygyroscopemeanfreqx
 
-Frequency domain signal, from body gyroscope weighted average of frequency components for x axis
+  - Frequency domain signal, from body gyroscope weighted average of frequency components for x axis
 
 * frequencydomainbodygyroscopemeanfreqy
 
-Frequency domain signal, from body gyroscope weighted average of frequency components for y axis
+  - Frequency domain signal, from body gyroscope weighted average of frequency components for y axis
 
 * frequencydomainbodygyroscopemeanfreqz
 
-Frequency domain signal, from body gyroscope weighted average of frequency components for z axis
+  - Frequency domain signal, from body gyroscope weighted average of frequency components for z axis
 
 * frequencydomainbodyaccelerometermagnitudemean
 
-Frequency domain signal, from body acceleration, magnitude, mean
+  - Frequency domain signal, from body acceleration, magnitude, mean
 
 * frequencydomainbodyaccelerometermagnitudestd
 
-Frequency domain signal, from body acceleration, magnitude, standard deviation of signal from axis 
+  - Frequency domain signal, from body acceleration, magnitude, standard deviation of signal from axis 
 
 * frequencydomainbodyaccelerometermagnitudemeanfreq
 
-Frequency domain signal, from body acceleration, magnitude, weighted average of the frequency components for mean frequency
+  - Frequency domain signal, from body acceleration, magnitude, weighted average of the frequency components for mean frequency
 
 * frequencydomainbodylinearaccelerationmagnitudemean
 
-Frequency domain signal, bodylinearaccelerationmagnitude, mean
+  - Frequency domain signal, bodylinearaccelerationmagnitude, mean
 
 * frequencydomainbodylinearaccelerationmagnitudestd
 
-Frequency domain signal, bodylinearaccelerationmagnitude, standard deviation of signal from axis 
+  - Frequency domain signal, bodylinearaccelerationmagnitude, standard deviation of signal from axis 
 
 * frequencydomainbodylinearaccelerationmagnitudemeanfreq
 
-Frequency domain signal, bodylinearaccelerationmagnitude, weighted average of the frequency components for mean frequency
+  - Frequency domain signal, bodylinearaccelerationmagnitude, weighted average of the frequency components for mean frequency
 
 * frequencydomainbodygyroscopemagnitudemean
 
-Frequency domain signal, from body gyroscope magnitude, mean
+  - Frequency domain signal, from body gyroscope magnitude, mean
 
 * frequencydomainbodygyroscopemagnitudestd
 
-Frequency domain signal, from body gyroscope magnitude, standard deviation of signal from axis 
+  - Frequency domain signal, from body gyroscope magnitude, standard deviation of signal from axis 
 
 * frequencydomainbodygyroscopemagnitudemeanfreq
 
-Frequency domain signal, from body gyroscope magnitude, weighted average of the frequency components for mean frequency
+  - Frequency domain signal, from body gyroscope magnitude, weighted average of the frequency components for mean frequency
 
 * frequencydomainbodygyroscopeangularvelocitymagnitudemean
 
-Frequency domain signal, from body gyroscope angular velocity, magnitude, mean
+  - Frequency domain signal, from body gyroscope angular velocity, magnitude, mean
 
 * frequencydomainbodygyroscopeangularvelocitymagnitudestd
 
-Angle between time domain signal from body accelerometer mean and gravity signal
+  - Angle between time domain signal from body accelerometer mean and gravity signal
 
 * frequencydomainbodygyroscopeangularvelocitymagnitudemeanfreq
 
-Angle between time domain signal from body linear accelerometer mean and average gravity signal in a signal window sample
+  - Angle between time domain signal from body linear accelerometer mean and average gravity signal in a signal window sample
 
 * anglebetweentimedomainbodyaccelerometermeanandgravity
 
-Angle between time domain signal from gyroscope mean and average gravity signal in a signal window sample
+  - Angle between time domain signal from gyroscope mean and average gravity signal in a signal window sample
 
 * anglebetweentimedomainbodylinearaccelerationmeanandgravitymean
 
-Angle between time domain signal from gyroscope angular velocity mean and average gravity signal in a signal window sample
+  - Angle between time domain signal from gyroscope angular velocity mean and average gravity signal in a signal window sample
 
 * anglebetweentimedomainbodygyroscopemeanandgravitymean
 
-Angle between x axis and average gravity signal in a signal window sample
+  - Angle between x axis and average gravity signal in a signal window sample
 
 * anglebetweentimedomainbodygyroscopeangularvelocitymeanandgravitymean
 
-Angle between y axis and average gravity signal in a signal window sample
+  - Angle between y axis and average gravity signal in a signal window sample
 
 * anglebetweenxandgravitymean
 
-Angle between x axis and average gravity signal in a signal window sample
+  - Angle between x axis and average gravity signal in a signal window sample
 
 * anglebetweenyandgravitymean
 
-Angle between y axis and average gravity signal in a signal window sample
+  - Angle between y axis and average gravity signal in a signal window sample
 
 * anglebetweenzandgravitymean
 
-Angle between z axis and average gravity signal in a signal window sample
+  - Angle between z axis and average gravity signal in a signal window sample
 
