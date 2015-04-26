@@ -7,7 +7,7 @@ Note that more detailed annotations are in the script, along with delineation of
 Note that the package **dplyr** needs to be installed as it is used in stage 5. 
 
 ## Step 1
-Assuming the data is downloaded into your working directory, the commands in step 1 load up the original train and test sets provided (a preprocessed random 70%/30% split of the original dataset). 
+Assuming the data is downloaded into your working directory (in the form .../UCI HAR Dataset), the commands in step 1 load up the original train and test sets provided (a preprocessed random 70%/30% split of the original dataset). 
 
 The train and test datasets are merged with their respective activity (denoted as "y" in the raw data) and subject ("subj" in the raw data) labels, then merged together as "combined.data".
 
